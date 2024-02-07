@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import TodoList from './components/TodoList/TodoList'
 import './App.css'
 import AddTodo from './components/AddTodo/AddTodo';
@@ -13,6 +13,9 @@ function App() {
   let nextId = todos.length+1;
   setTodos([...todos , {id: nextId, isFinished : false, text : todoText}])
  }
+
+
+
   return (
     <>
       <AddTodo addTodos={addTodos}/>
