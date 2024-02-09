@@ -17,7 +17,7 @@ const AddTodo = () => {
                let nextId = todos.length +1;
                setTodos([...todos, {id: nextId, text : todoText, isFinished : false}]);
                 setTodoText('')
-            }}>Submit</button>
+            }}>SUBMIT</button>
         </div>
     );
 }
